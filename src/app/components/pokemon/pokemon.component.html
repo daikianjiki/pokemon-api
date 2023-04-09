@@ -1,0 +1,40 @@
+<p>Enter a number: </p>
+<input [(ngModel)] = 'input'> <br>
+<button (click) = 'loadPokemon()'>Gotta Catch Em' All</button>
+<br>
+<img [src] = 'pokemonImg'>
+<table>
+    <tbody>
+        <tr>
+            <th>Pokemon Index:</th><td>{{ pokemon.id }}</td>
+        </tr>
+        <tr>
+            <th>Pokemon Name:</th><td>{{ pokemon.name }}</td>
+        </tr>
+        <tr>
+            <th>Pokemon Type:</th><td>{{ pokemonType }}</td>
+        </tr>
+        <tr>
+            <th>Pokemon Type 2:</th><td>{{ pokemonType2 }}</td>
+        </tr>
+        <tr>
+            <th>HP:</th><td>{{ pokemon.stats[0].base_stat }}</td>
+        </tr>
+        <tr>
+            <th>Attack:</th><td>{{ pokemon.stats[1].base_stat }}</td>
+        </tr>
+        <tr>
+            <th>Defence:</th><td>{{ pokemon.stats[2].base_stat }}</td>
+        </tr>
+        <tr>
+            <th>Special-Attack:</th><td>{{ pokemon.stats[3].base_stat }}</td>
+        </tr>
+        <tr>
+            <th>Special-Defence:</th><td>{{ pokemon.stats[4].base_stat }}</td>
+        </tr>
+        <tr>
+            <th>Speed:</th><td>{{ pokemon.stats[5].base_stat }}</td>
+        </tr>
+    </tbody>
+</table>
+

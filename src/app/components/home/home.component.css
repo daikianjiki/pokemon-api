@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+.component {
+    border: 5px dashed green;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+img {
+    width: 150px;
+}
